@@ -6,8 +6,12 @@
     "docker:dev:build": "docker compose -f docker-compose.dev.yml build",
     "docker:dev:build:nc": "npm run docker:dev:build -- --no-cache",
     "docker:dev:up": "docker compose -f docker-compose.dev.yml up --no-recreate",
-    "docker:dev:down": "docker compose -f docker-compose.dev.yml down --remove-orphans"
+    "docker:dev:down": "docker compose -f docker-compose.dev.yml down --remove-orphans",
+    "dump": "node dump.js"
   },
   "author": "Anthony Collins",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mysqldump": "^3.2.0"
+  }
 }
