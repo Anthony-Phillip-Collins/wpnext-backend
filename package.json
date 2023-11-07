@@ -1,0 +1,13 @@
+{
+  "name": "wpnext-backend",
+  "version": "0.0.1",
+  "description": "Wordpress installation",
+  "scripts": {
+    "docker:dev:build": "docker compose -f docker-compose.dev.yml build",
+    "docker:dev:build:nc": "npm run docker:dev:build -- --no-cache",
+    "docker:dev:up": "docker compose -f docker-compose.dev.yml up --no-recreate",
+    "docker:dev:down": "docker compose -f docker-compose.dev.yml down --remove-orphans"
+  },
+  "author": "Anthony Collins",
+  "license": "ISC"
+}
