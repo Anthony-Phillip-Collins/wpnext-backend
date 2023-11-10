@@ -7,7 +7,7 @@
     "docker:dev:build:nc": "npm run docker:dev:build -- --no-cache",
     "docker:dev:up": "docker compose -f docker-compose.dev.yml up --no-recreate",
     "docker:dev:down": "docker compose -f docker-compose.dev.yml down --remove-orphans",
-    "dump": "node dump.js"
+    "dump": "node dump"
   },
   "author": "Anthony Collins",
   "license": "ISC",
